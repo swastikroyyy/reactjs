@@ -1,0 +1,10 @@
+const initailState = 0;
+const cn = (state = initailState, action) => {
+    switch (action.type) {
+        case "INC": return state + 1;
+        case "DEC": return state - 1;
+        default: return state;
+    }
+
+}
+export default cn;
